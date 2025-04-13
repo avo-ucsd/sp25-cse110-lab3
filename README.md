@@ -16,37 +16,37 @@
   - [X] `h3`
 - [X] `section`
 ### Text Content
-- [ ] `div`
-- [ ] `span`
-- [ ] `hr`
+- [X] `div`
+- [X] `span`
+- [X] `hr`
 - [ ] `p`
-- [ ] `ul`
-- [ ] `ol`
-- [ ] `li`
+- [X] `ul`
+- [X] `ol`
+- [X] `li`
 ### Inline Text Semantics
-- [ ] `b`
+- [X] `b`
 - [ ] `strong`
 - [ ] `i`
 - [ ] `em`
 - [ ] `a`
 - [ ] `br`
 ### Images and Multimedia
-- [ ] `img`
-- [ ] `audio`
-- [ ] `video`
+- [X] `img`
+- [X] `audio`
+- [X] `video`
 ### Interactive Elements
-- [ ] `details`
-- [ ] `summary`
+- [X] `details`
+- [X] `summary`
 ### Forms
-- [ ] `form`
-- [ ] `fieldset`
-- [ ] `input`
-  - [ ] checkbox
-  - [ ] radio
-  - [ ] text
-  - [ ] date
-- [ ] `textarea`
+- [X] `form`
+- [X] `fieldset`
+- [X] `input`
+  - [X] checkbox
+  - [X] radio
+  - [X] text
+  - [X] date
+- [X] `textarea`
 - [ ] `datalist`
 - [ ] `select`
 - [ ] `option`
-- [ ] `button`
+- [X] `button`

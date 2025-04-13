@@ -13,7 +13,7 @@
 
         <header>
             <h1>Cookie Clicker: Brainstorming Session 2</h1>
-            <time>April 9 2025</time>
+            <time datetime="2025-04-09">April 9 2025</time>
         </header>
 
         <section>        
@@ -35,21 +35,118 @@
             </ul>
         </section>
 
+        <hr>
+
         <section>
             <h2>Agenda</h2>
+            <ol>
+                <li>Go over old discussion points</li>
+                <li>Discuss new topics for the app</li>
+                <li>Q/A session</li>
+                <li>Address feedback form</li>
+            </ol>
 
             <h3>Unfinished Business from Last Meeting</h3>
+            <h4></h4>
 
             <h3>New Business to Discuss</h3>
 
+            <h4>Cookie types to include</h4>
+            <p>An idea was brought up to have different unlockable types of cookies for cosmetics:</p>
+
+            <ol>
+                <li><b>Chocolate chip</b> is one of the most well known flavors. It would be wise to include it.</li>
+                <li>Oatmeal raisin was divisive among our survey results.</li>
+                <li>Double chocolate seems be well received.</li>
+            </ol>
+
+            <h4>App color theme ideas</h4>
+            <ul>
+                <li>Warm colors (red, orange, yellow...)</li>
+                <li>Cool colors (green, blue, purple...)</li>
+                <li>Monochrome (whites and blacks)</li>
+            </ul>
+
             <h3>Questions, Concerns, Comments</h3>
+            <h4>Acknowledgements</h4>
+            <details>
+                <summary>Sponsor(s) of today's meeting</summary>
+                Cookie Monster brought cookies for all attendees.
+            </details>
         </section>
 
         <section>
             <h2>Presentation Materials</h2>
+
+            <img src="/media/cookie_clicker_menu.png"
+                 alt="The game Cookie Clicker's menu"
+                 width="500">
+
+            <div class="meeting-media">
+                <h3>AWESOME Meeting Materials</h3>
+
+                <video controls width="500">
+                    <source src="/media/lab2_video.mp4" type="video/mp4">
+                </video>
+
+                <audio controls src="/media/lab2_audio.mp3"></audio>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <div class="form-person-info">
+                        <p>Enter in your info:</p>
+                        <div>
+                            <label>First name</label>
+                            <input type="text" name="first-name">
+                        </div>
+                        <div>
+                            <label>Last name</label>
+                            <input type="text" name="last-name">
+                        </div>
+                    </div>
+
+                    <div class="form-preferences">
+                        <div>
+                            <p>Select your favorite cookie ideas:</p>
+                            <input type="checkbox" name="cookie-ideas">
+                            <label>Chocolate chip</label>
+                            <input type="checkbox" name="cookie-ideas">
+                            <label>Oatmeal raisin</label>
+                            <input type="checkbox" name="cookie-ideas">
+                            <label>Double chocolate</label>
+                        </div>
+                        
+                        <div>
+                            <p>Do you like cookies?</p>
+                            <input type="radio" name="cookie-pref" id="cookie-yes">
+                            <label for="cookie-yes">Yes</label>
+                            <input type="radio" name="cookie-pref" id="cookie-no">
+                            <label for="cookie-no">No</label>
+                        </div>
+                    </div>
+
+                    <div class="form-other">
+                        <p>Any other comments?</p>
+                        <textarea></textarea>
+                    </div>
+
+                    <div class="form-submission">
+                        <label for="date-submitted">Enter in today's date</label>
+                        <input type="date">
+                        <button type="button">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
         </section>
 
         <footer>
+            
         </footer>
     </main>
   </body>
