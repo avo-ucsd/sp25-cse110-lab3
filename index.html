@@ -8,16 +8,23 @@
 
   <body>
     <main>
-        <nav>
-        </nav>
-
         <header>
             <h1>Cookie Clicker: Brainstorming Session 2</h1>
             <time datetime="2025-04-09">April 9 2025</time>
         </header>
 
+        <nav>
+            <ul>
+                <li><a href="#housekeeping">Housekeeping</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unfinished-business">Unfinished Business</a></li>
+                <li><a href="#new-business">New Business</a></li>
+                <li><a href="#questions-concerns">Questions, Concerns...</a></li>
+            </ul>
+        </nav>
+
         <section>        
-            <h2>Housekeeping</h2>
+            <h2 id="housekeeping">Housekeeping</h2>
 
             <h3>Attendance List</h3>
             <p>Present:</p>
@@ -38,7 +45,7 @@
         <hr>
 
         <section>
-            <h2>Agenda</h2>
+            <h2 id="agenda">Agenda</h2>
             <ol>
                 <li>Go over old discussion points</li>
                 <li>Discuss new topics for the app</li>
@@ -46,12 +53,26 @@
                 <li>Address feedback form</li>
             </ol>
 
-            <h3>Unfinished Business from Last Meeting</h3>
-            <h4></h4>
+            <h2 id="unfinished-business">Unfinished Business from Last Meeting</h2>
+            
+            <h3>Required reading</h3>
+            <p>The group discussed their thoughts about <i>If You Give a Mouse a Cookie</i> by Laura Numeroff.</p>
 
-            <h3>New Business to Discuss</h3>
+            <h3>Cookie Poem</h3>
+            <p>We love to bake.<br>
+            But it is not cake.<br>
+            So we look like rookies<br>
+            trying to make cookies.</p>
 
-            <h4>Cookie types to include</h4>
+            <h3>Speaker mentions</h3>
+            <ul>
+                <li><strong>Cookie Monster</strong> will be the app's mascot!</li>
+                <li>Do <em>not</em> submit idea drafts to Kermit.</li>
+            </ul>
+
+            <h2 id="new-business">New Business to Discuss</h2>
+
+            <h3>Cookie types to include</h3>
             <p>An idea was brought up to have different unlockable types of cookies for cosmetics:</p>
 
             <ol>
@@ -60,15 +81,15 @@
                 <li>Double chocolate seems be well received.</li>
             </ol>
 
-            <h4>App color theme ideas</h4>
+            <h3>App color theme ideas</h3>
             <ul>
                 <li>Warm colors (red, orange, yellow...)</li>
                 <li>Cool colors (green, blue, purple...)</li>
                 <li>Monochrome (whites and blacks)</li>
             </ul>
 
-            <h3>Questions, Concerns, Comments</h3>
-            <h4>Acknowledgements</h4>
+            <h2 id="questions-concerns">Questions, Concerns, Comments</h2>
+            <h3>Acknowledgements</h3>
             <details>
                 <summary>Sponsor(s) of today's meeting</summary>
                 Cookie Monster brought cookies for all attendees.
@@ -113,17 +134,28 @@
 
                     <div class="form-preferences">
                         <div>
-                            <p>Select your favorite cookie ideas:</p>
-                            <input type="checkbox" name="cookie-ideas">
-                            <label>Chocolate chip</label>
-                            <input type="checkbox" name="cookie-ideas">
-                            <label>Oatmeal raisin</label>
-                            <input type="checkbox" name="cookie-ideas">
-                            <label>Double chocolate</label>
+                            <p><label>Select your favorite cookie ideas:</label></p>
+                            <input type="checkbox" name="chocolate-chip">
+                            <label for="chocolate-chip">Chocolate chip</label>
+                            <input type="checkbox" name="oatmeal-raisin">
+                            <label for="oatmeal-raisin">Oatmeal raisin</label>
+                            <input type="checkbox" name="double-chocolate">
+                            <label for="double-chocolate">Double chocolate</label>
+                        </div>
+
+                        <div>
+                            <label for="cookie-suggestion">Enter a cookie suggestion:</label>
+                            <input list="cookie-suggestion-list" id="cookie-suggestion">
+                            <datalist id="cookie-suggestion-list">
+                                <option value="Macarons"></option>
+                                <option value="M&Ms"></option>
+                                <option value="Snickerdoodles"></option>
+                                <option value="Sugar"></option>
+                            </datalist>
                         </div>
                         
                         <div>
-                            <p>Do you like cookies?</p>
+                            <p><label>Do you like cookies?</label></p>
                             <input type="radio" name="cookie-pref" id="cookie-yes">
                             <label for="cookie-yes">Yes</label>
                             <input type="radio" name="cookie-pref" id="cookie-no">
@@ -132,8 +164,19 @@
                     </div>
 
                     <div class="form-other">
-                        <p>Any other comments?</p>
-                        <textarea></textarea>
+                        <p><label for="form-comments">Any other comments?</label></p>
+                        <textarea id="form-comments"></textarea>
+
+                        <p><label for="dessert-select">Choose next week's bonus dessert topic:</label></p>
+                        <select name="desserts" id="dessert-select">
+                            <option value="">---</option>
+                            <option value="brownie">Brownie</option>
+                            <option value="cake">Cake</option>
+                            <option value="ice cream">Ice Cream</option>
+                            <option value="pie">Pie</option>
+                            <option value="scone">Scone</option>
+                            <option value="tart">Tarts</option>
+                        </select>
                     </div>
 
                     <div class="form-submission">

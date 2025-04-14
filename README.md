@@ -19,17 +19,17 @@
 - [X] `div`
 - [X] `span`
 - [X] `hr`
-- [ ] `p`
+- [X] `p`
 - [X] `ul`
 - [X] `ol`
 - [X] `li`
 ### Inline Text Semantics
 - [X] `b`
-- [ ] `strong`
-- [ ] `i`
-- [ ] `em`
-- [ ] `a`
-- [ ] `br`
+- [X] `strong`
+- [X] `i`
+- [X] `em`
+- [X] `a`
+- [X] `br`
 ### Images and Multimedia
 - [X] `img`
 - [X] `audio`
@@ -46,7 +46,7 @@
   - [X] text
   - [X] date
 - [X] `textarea`
-- [ ] `datalist`
-- [ ] `select`
-- [ ] `option`
+- [X] `datalist`
+- [X] `select`
+- [X] `option`
 - [X] `button`
