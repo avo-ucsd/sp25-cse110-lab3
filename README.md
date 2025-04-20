@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-https://avo-ucsd.github.io/CSE110_Lab2_Starter/
+# Lab 3
+https://avo-ucsd.github.io/sp25-cse110-lab3/
