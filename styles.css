@@ -1,0 +1,154 @@
+/*
+ *  Color palette
+ *   #2E1E3D
+ *   #230440
+ *   #450B7A
+ *   #6806C4
+ *   #952FF5
+ */
+* {
+    font-family: "Lato", sans-serif;
+}
+
+/* Header */
+header, footer {
+    background-color: rgb(42, 30, 61);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+}
+
+/* Meeting minutes body */
+#attendance-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 2vh;
+}
+
+#book {
+    display: block;
+    color: #952FF5;
+    border-style: hidden hidden hidden solid;
+    border-color: #952FF5;
+    padding-left: 10px;
+    border-width: 5px;
+}
+
+#colors {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-column-start: auto;
+}
+
+#warm-color {
+    color: red;
+}
+
+#cool-color {
+    color: blue;
+}
+
+.discussion-item {
+    border-style: hidden hidden hidden solid;
+    border-color: #6806C4;
+    border-width: 0.25rem;
+    margin: 5mm auto 5mm auto;
+    padding: 5px 5px 5px 5%;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+
+a[href="#agenda"] {
+    color: var(--no-color, greenyellow);
+}
+
+h1:has(+ time) {
+    text-decoration: underline;
+
+    &:hover {
+        color: pink;
+    }
+}
+
+h2.toc {
+    &:hover {
+        color: pink;
+    }
+}
+
+h3 ~ details {
+    background-color: lightgrey;
+    border-style: hidden hidden hidden solid;
+    border-width: 10px;
+    padding: 5px 0px 5px 10px;
+    border-color: #6806C4;
+}
+
+h3 + p {
+    background-color: antiquewhite;
+}
+
+section h2 {
+    background-color: #d0b4eb;
+    margin: 0pt 0pt 0pt 0pt;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 30px;
+}
+
+nav {
+    color: white;
+    background-color: #230440;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 1vh 0vw 1vh 2vw;
+    position: static;
+}
+
+nav > ul > li {
+    text-decoration: underline;
+}
+
+li {
+    margin: 5px;
+}
+
+.discussion-item + img, video {
+    max-width: 500px;
+    max-height: 500px;
+    border-style: solid;
+    border-width: 10px;
+    border-color:#952FF5
+}
+
+@media (color-gamut: srgb)
+{
+    a:hover {
+        color: color(srgb 24% 81% 100%);
+    }
+
+    a:active {
+        color: color-mix(in srgb, rgb(255, 166, 0), rgb(0, 255, 0));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .toc {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 400px) and (min-width: 1000px) {
+    .toc {
+        width: 100%;
+    }
+}
